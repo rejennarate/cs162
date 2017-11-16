@@ -1,0 +1,18 @@
+line 19: determinGrade was not declared in this scope, fixed it by correcting the typo (determinGrade to determineGrade)
+
+line 42: the determineGrade function definition was also misspelled as determinGrade, corrected the spelling
+
+line 54: removed the semicolon at the end of the else if: else if(finalAvg >= MIN_C);
+
+line 65: strcpy was not declared in this scope, fixed it by adding the string header
+
+all: app
+
+app: 
+		g++ -o app app.cpp
+
+debug:
+		g++ -g -o app app.cpp
+
+clean:
+		rm app
